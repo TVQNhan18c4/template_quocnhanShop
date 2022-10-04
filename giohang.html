@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Shop</title>
+
+    <link rel="stylesheet" href="./css/fontawesome-free-6.1.2-web/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/product_details.css">
+    <link rel="stylesheet" href="./css/cart-order_details.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="stylesheet" href="./css/toast.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <div class="box_90">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="search-infor">
+                    <div class="search">
+                        <input class="text_search" placeholder="Search..." type="text" />
+                        <button class="btn_search" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="infor">
+                        <a href="">đăng ký</a>
+                        <a href="">đăng nhập</a>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i> giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article>
+        <div class="breadcrumb">
+            <a href="./index.html">trang chủ</a>
+            <span>/</span>
+            <a href="">giỏ hàng</a>
+        </div>
+        <div class="giohang">
+            <div class="box_90">
+                <table class="chitiet_gio">
+                    <tr>
+                        <th>ảnh</th>
+                        <th>tên sản phẩm</th>
+                        <th>giá sản phẩm</th>
+                        <th>số lượng</th>
+                        <th>thành tiền</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td style="width:15%"><img style="width: 100%," src="./img/product/Galaxy-S22-Plus-White-600x600.jpg" alt=""></td>
+                        <td style="width:30%">Galaxy-S22-Plus</td>
+                        <td style="width:15%">25,990,000₫</td>
+                        <td style="width:14%">
+                            <input class="soluong" type="number" value="1">
+                        </td>
+                        <td style="width:15%">25,990,000₫</td>
+                        <td style="width:11%">
+                            <a href=""><i class="fa-solid fa-xmark"></i> delete</i></a>
+                            <a href=""><i class="fa fa-refresh"></i> update</a>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <div class="tongtien"> tong tien : <span> 25,990,000₫</span></div>
+                <button class="btn-dathang">Đặt hàng</button>
+                <!-- <a href="">Đặt hàng</a> -->
+                <a href="./donhang.html">Xem đơn hàng</a>
+            </div>
+        </div>
+    </article>
+
+    <div class="modal-order">
+        <div class="modal-content">
+            <div class="modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="modal-header">
+                Đặt hàng
+            </div>
+            <div class="modal-body">
+                <label class="modal-label">tên người nhận</label>
+                <input class="modal-input">
+                <label class="modal-label">số điện thoại</label>
+                <input class="modal-input">
+                <label class="modal-label">địa chỉ</label>
+                <input class="modal-input">
+                <button class="dathang">xác nhận</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Designed by Quoc Nhan</h1>
+        <p>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+        </p>
+    </footer>
+    <div id="snackbar">Hello</div>
+
+</body>
+
+</html>
+
+
+<script src="./js/modal_order.js"></script>
+<script src="./js/toast.js"></script>
